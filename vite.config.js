@@ -1,9 +1,9 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/react-plugin' // or vue, etc., depending on your framework
+import react from '@vitejs/plugin-react' // Fixed the package name here
 
 export default defineConfig({
   plugins: [react()],
   preview: {
-    allowedHosts: ['pharmtech-ngin.onrender.com']
+    allowedHosts: true // This allows any host, including your Render URL
   }
 })
